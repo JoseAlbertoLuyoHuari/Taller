@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "041ad13e-7915-4d1c-9e19-3c9bfb45d89c",
+		"name": "SQL_SERVER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43465798",
+		"_collection_link": "https://jose-7878341.postman.co/workspace/SQL_SERVER~9100869b-f23e-4120-9388-78e4b4d4ecf1/collection/43465798-041ad13e-7915-4d1c-9e19-3c9bfb45d89c?action=share&source=collection_link&creator=43465798"
+	},
+	"item": [
+		{
+			"name": "FOLDER",
+			"item": [
+				{
+					"name": "CREATE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dni\": \"60848272\",\r\n    \"firstName\": \"JOSE\",\r\n    \"lastName\": \"LUYO\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cautious-couscous-69rq9v7xg5p6hxq4q-8085.app.github.dev/v1/api/customer/save",
+							"protocol": "https",
+							"host": [
+								"cautious-couscous-69rq9v7xg5p6hxq4q-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cautious-couscous-69rq9v7xg5p6hxq4q-8085.app.github.dev/v1/api/customer",
+							"protocol": "https",
+							"host": [
+								"cautious-couscous-69rq9v7xg5p6hxq4q-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "READ x ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cautious-couscous-69rq9v7xg5p6hxq4q-8085.app.github.dev/v1/api/customer/2",
+							"protocol": "https",
+							"host": [
+								"cautious-couscous-69rq9v7xg5p6hxq4q-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"dni\": \"12345678\",\r\n    \"firstName\": \"Roberto\",\r\n    \"lastName\": \"Sanchez\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cautious-couscous-69rq9v7xg5p6hxq4q-8085.app.github.dev/v1/api/customer/update",
+							"protocol": "https",
+							"host": [
+								"cautious-couscous-69rq9v7xg5p6hxq4q-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"dni\": \"12345678\",\r\n    \"firstName\": \"Roberto\",\r\n    \"lastName\": \"Sanchez\"\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cautious-couscous-69rq9v7xg5p6hxq4q-8085.app.github.dev/v1/api/customer/delete",
+							"protocol": "https",
+							"host": [
+								"cautious-couscous-69rq9v7xg5p6hxq4q-8085",
+								"app",
+								"github",
+								"dev"
+							],
+							"path": [
+								"v1",
+								"api",
+								"customer",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
